@@ -2,7 +2,7 @@ import json
 import tabula
 import requests
 
-# Функция для конвертации таблицы из PDF в JSON
+# Функция для конвертации таблицы из PDF 
 def convert_pdf_table_to_json(pdf_file_path, page_number):
     # Извлечение таблицы с указанной страницы
     df = tabula.read_pdf(pdf_file_path, pages=page_number, multiple_tables=True)[0]
